@@ -42,6 +42,13 @@ class App extends Component {
           <div className="selected-gif">
             <Gif id={this.state.selectedGifId} />
           </div>
+          <div className="link-gif">
+            <p>
+            https://media.giphy.com/media/
+              {this.state.selectedGifId}
+            /giphy.gif
+            </p>
+          </div>
         </div>
         <div className="right-scene">
           <GifList gifs={this.state.gifs} updateFn={this.updateGif} />
